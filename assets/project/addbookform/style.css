@@ -1,0 +1,94 @@
+#book-form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 32px 0;
+}
+@media (min-width: 1024px) {
+	#book-form .form-container{
+		padding: 16px;
+	}
+}
+#book-form .form-container{
+	box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	width: 900px;
+	max-width: 900px;
+	border: 2px solid #e46415;
+}
+#book-form .book-form{
+	
+}
+#book-form input[type="text"]{
+	display: block;
+	outline: none;
+	border: 1px solid black;
+	line-height: 1.7;
+	font-size: 24px;
+	margin-bottom: 16px;
+	border-radius: 4px;
+	width: 100%;
+	padding: 4px 16px;
+}
+#book-form input[type="text"]:hover{
+	border: 1px solid #e46415;
+}
+#book-form .form-title{
+	text-align: center;
+	padding: 16px;
+	margin: 16px 0;
+	font-size: 24px;
+}
+#book-form .category-list{
+	padding: 0 16px;
+}
+#book-form .choose-category{
+	display: block;
+	padding: 16px 0;
+}
+#category{
+	display: block;
+	width: 50%;
+	line-height: 1.7;
+	font-size: 20px;
+	padding: 4px 16px;
+	margin: 16px 0;
+}
+#book-form .button-container{
+	padding: 16px 16px;
+}
+#book-form .book-submit{
+	border: none;
+	display: block;
+	padding: 8px;
+	line-height: 1.7;
+	font-size: 24px;
+	width: 100%;
+	background-color: #411c06;
+	color: white;
+	border-radius: 8px;
+}
+#book-form .book-submit:hover{
+	background-color:#82390c;
+}
+#book-form .input-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#book-form .form-label{
+	width: 160px;
+	max-width: 160px;
+}
+#book-form .form-input{
+	margin-right: 16px;
+	flex: 1;
+}
+#book-form .label{
+	line-height: 1.7;
+	font-size: 24px;
+	margin-bottom: 16px;
+	border-radius: 4px;
+	width: 100%;
+	padding: 4px 16px;
+}

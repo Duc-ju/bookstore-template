@@ -1,0 +1,49 @@
+@media (min-width: 1024px) {
+
+}
+
+/* Mobile and Tablet*/
+@media (max-width: 1023px) {
+	#header{
+		display: block;
+		position: relative;
+		
+	}
+	#header .control{
+		width: 100%;
+	}
+	#header .control-item{
+		float: none;
+		display: block;
+		padding-left: 16px;
+	}
+	#header .cart{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	#header .quantity{
+	}
+	#header .brand-name, #header .search{
+		padding-left: 32px;
+	}
+	#header .search{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 62.6666666px;
+		
+	}
+	#search-book-name{
+		line-height:45px;
+		flex: 1;
+		
+	}
+	#submit-button{
+		margin-left: 32px;
+		margin-right: 32px;
+		height: 46px;
+	}
+	
+
+}

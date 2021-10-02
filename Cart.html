@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đức Ju</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/project/cart/style.css">
+	<link rel="stylesheet" href="assets/css/respondsive.css">
+	<link rel="stylesheet" href="assets/project/cart/respondsive.css">
+	<link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Roboto+Slab:wght@700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+		<header id="header">
+
+
+
+
+
+			<div class="brand-name pointer">
+				<i class="ti-user"> </i>
+				DucJu
+			</div>
+
+
+
+			<div class="nav">
+				<ul class="control">
+					<li class="control-item "><a href="https://duc-ju.github.io/bookstore-template/">Home</a></li>
+
+					<li class="control-item "><a href="https://duc-ju.github.io/bookstore-template/ManageBook.html">Book Management</a>
+					</li>
+
+
+
+					<li class="control-item"><a href="#">Logout</a></li>
+
+				</ul>
+			</div>
+			<form method="get" action="#" class="search">
+				<input type="text" name="book_name" placeholder="Book name" id="search-book-name">
+				<input type="submit" value="Search" id="submit-button">
+			</form>
+
+		</header>
+		<div id="content">
+			<div class="empty-cart">
+				<h2 class="empty-cart-notice">Cart is empty</h2>
+				<a href="https://duc-ju.github.io/bookstore-template/" class="go-home-button">Go home</a>
+			</div>
+			<div class="cart-container">
+				<div class="sub-nav">
+					<div class="sub-nav-title">
+						<h2 class="content-title">Cart and order</h2>
+					</div>
+					<div class="sub-nav-price">Prices</div>
+					<div class="sub-nav-quantity">Quantity</div>
+					<div class="sub-nav-amount">Amount</div>
+					<div class="sub-nav-action">Action</div>
+				</div>
+				<div id="cart-id" style="display: none">20</div>
+
+
+				<div class="book-item">
+					<div class="book-image">
+						<img src="https://m.media-amazon.com/images/I/51DZeZw7K0L.jpg"
+							alt="Book-image" class="book-image-item">
+					</div>
+					<div class="book-properties">
+						<div class="book-title">Greenlights Audible Logo Audible Audiobook Unabridged</div>
+						<div class="book-author">Author: Matthew McConaughey</div>
+					</div>
+					<div class="book-price">16.95$</div>
+					<div class="book-quantity">
+						<div class="book-update">
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=40&action=decrease','_self')"
+								class="book-subtract pointer">-</div>
+							<div class="book-number-quantity">2</div>
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=40&action=increase','_self')"
+								class="book-plus pointer">+</div>
+						</div>
+					</div>
+					<div class="book-total">
+						<div class="book-total-cost">33,90$</div>
+					</div>
+					<div class="book-action">
+						<a class="book-delete-button"
+							href="/LAB1/deletebookitem?id=40">Delete</a>
+					</div>
+				</div>
+
+				<div class="book-item">
+					<div class="book-image">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/51C45Gzkq-L._SX329_BO1,204,203,200_.jpg"
+							alt="Book-image" class="book-image-item">
+					</div>
+					<div class="book-properties">
+						<div class="book-title">Mighty Marvel Masterworks: The Amazing
+							Spider-Man Vol. 1: With Great Power…</div>
+						<div class="book-author">Author: Stan Lee</div>
+					</div>
+					<div class="book-price">12.89$</div>
+					<div class="book-quantity">
+						<div class="book-update">
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=41&action=decrease','_self')"
+								class="book-subtract pointer">-</div>
+							<div class="book-number-quantity">3</div>
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=41&action=increase','_self')"
+								class="book-plus pointer">+</div>
+						</div>
+					</div>
+					<div class="book-total">
+						<div class="book-total-cost">38,67$</div>
+					</div>
+					<div class="book-action">
+						<a class="book-delete-button"
+							href="/LAB1/deletebookitem?id=41">Delete</a>
+					</div>
+				</div>
+
+				<div class="book-item">
+					<div class="book-image">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/513ubmtns2L._SX339_BO1,204,203,200_.jpg"
+							alt="Book-image" class="book-image-item">
+					</div>
+					<div class="book-properties">
+						<div class="book-title">The Joker: 80 Years of the Clown Prince of Crime
+							The Deluxe Edition</div>
+						<div class="book-author">Author: Various</div>
+					</div>
+					<div class="book-price">18.69$</div>
+					<div class="book-quantity">
+						<div class="book-update">
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=42&action=decrease','_self')"
+								class="book-subtract pointer">-</div>
+							<div class="book-number-quantity">1</div>
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=42&action=increase','_self')"
+								class="book-plus pointer">+</div>
+						</div>
+					</div>
+					<div class="book-total">
+						<div class="book-total-cost">18,69$</div>
+					</div>
+					<div class="book-action">
+						<a class="book-delete-button"
+							href="/LAB1/deletebookitem?id=42">Delete</a>
+					</div>
+				</div>
+
+				<div class="book-item">
+					<div class="book-image">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/51RN-ydxniS._SX318_BO1,204,203,200_.jpg"
+							alt="Book-image" class="book-image-item">
+					</div>
+					<div class="book-properties">
+						<div class="book-title">The Nature of Middle-earth</div>
+						<div class="book-author">Author: J.R.R. Tolkien</div>
+					</div>
+					<div class="book-price">19.2$</div>
+					<div class="book-quantity">
+						<div class="book-update">
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=43&action=decrease','_self')"
+								class="book-subtract pointer">-</div>
+							<div class="book-number-quantity">3</div>
+							<div onclick="window.open('/LAB1/bookitemcontrol?id=43&action=increase','_self')"
+								class="book-plus pointer">+</div>
+						</div>
+					</div>
+					<div class="book-total">
+						<div class="book-total-cost">57,60$</div>
+					</div>
+					<div class="book-action">
+						<a class="book-delete-button"
+							href="/LAB1/deletebookitem?id=43">Delete</a>
+					</div>
+				</div>
+
+
+
+				<div class="cart-control">
+					<div class="cart-order">
+						<div class="cart-total-price">Total price (9 items): 148,86$</div>
+						<div class="cart-order-button pointer">Order</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-container">
+				<div class="choose-address">
+					<h3 class="choose-address-title">Please choose your address</h3>
+
+
+					<div class="user-address">
+						<div class="addressid" style="display: none">1</div>
+						<div class="address-fullname">Full name: Nguyen Trang Duc</div>
+						<div class="address-phonenumber">Phone number: 0963835711</div>
+						<div class="address-fulladdress">Address: Thanh Tri, Ha Noi, Viet Nam
+						</div>
+					</div>
+
+					<div class="user-address">
+						<div class="addressid" style="display: none">2</div>
+						<div class="address-fullname">Full name: Nguyen Duc</div>
+						<div class="address-phonenumber">Phone number: 0935654342</div>
+						<div class="address-fulladdress">Address: Mo Lao, Ha Dong, Ha Noi, Viet
+							Nam</div>
+					</div>
+
+					<div class="user-address">
+						<div class="addressid" style="display: none">3</div>
+						<div class="address-fullname">Full name: Duc Ju</div>
+						<div class="address-phonenumber">Phone number: 0356547899</div>
+						<div class="address-fulladdress">Address: Hoc Vien Cong Nghe Buu Chinh
+							Vien Thong, Ha Dong, Ha Noi</div>
+					</div>
+
+
+
+					<div class="address-add">
+						<a href="" class="address-add-button">Add new address</a>
+					</div>
+				</div>
+				<div class="choose-payment-method">
+					<h3 class="payment-title">Please choose a payment method</h3>
+
+
+					<div class="payment-item">
+						<div class="payment-id" style="display: none">1</div>
+						<div class="payment-method">Pay on delivery</div>
+					</div>
+
+
+				</div>
+				<div class="order-control">
+					<div class="order-info">
+						<div class="order-total-price">Total price (9 items): 148,86$</div>
+						<div class="order-ship-fee">Shipping fee: 2$</div>
+						<div class="order-total-payment">Total payment: 150,86$</div>
+						<div class="order-button pointer">Confirm order</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="footer">
+			<div class="about">
+				<p class="author-name">Author : Nguyen Trang Duc</p>
+				<p class="author-identity">Student-identity : B18DCCN177</p>
+				<p class="author-last-update">Lastest update : 9/6/2021 at
+					12:55PM</p>
+				<p class="author-contact">
+					Contact me <a href="https://www.facebook.com/trangducc/" class="contact-icon"><i
+							class="ti-facebook"></i></a>
+				</p>
+			</div>
+		</div>
+		<div id="modal" class="modal">
+			<div class="modal-container">
+				<div class="modal-notice">
+					<h2 class="notice-title">You have added book successfully</h2>
+					<div class="modal-confirm">
+						<a class="modal-cancel" onclick="cancelAllModal()"
+							style="cursor: pointer">OK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/project/cart/script.js"></script>
+</body>
+
+</html>

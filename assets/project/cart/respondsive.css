@@ -1,0 +1,81 @@
+/* Mobile and Tablet*/
+@media (max-width: 1023px) {
+	#content .cart-container{
+		padding: 16px
+	}
+	#content .sub-nav{
+		margin-top: 0px;
+	}
+	#content .sub-nav >:first-child{
+		width: 100%;
+	}
+	#content .sub-nav >:not(:first-child){
+		display: none;
+	}
+	#content .book-item{
+		position: relative;
+		flex-direction: column;
+		margin: 16px 0;
+		padding: 8px;
+	}
+	#content .book-image{
+		padding: 8px;
+	}
+	#content .book-item > *{
+		width: 100%;
+	}
+	#content .book-properties{
+		margin: 0;
+		padding: 8px;
+	}
+	#content .book-title, #content .book-author{
+		margin: 8px 0;
+	}
+	#content .book-price{
+		padding: 8px
+	}
+	#content .book-price::before{
+		content: 'Prices:';
+		display: block;
+		margin-right: 8px;
+	}
+	#content .book-total{
+		padding: 8px;
+	}
+	#content .book-total::before{
+		content: 'Amount:';
+		display: block;
+		margin-right: 8px;
+	}
+	#content .book-action{
+		flex: 1;
+	}
+	#content .book-delete-button{
+		display: block;
+		width: 100%;
+		text-align: center;
+		background-color: #411c06;
+		color: white;
+		padding: 16px 0;
+	}
+	#content .book-delete-button:hover{
+		color: white;
+		background-color: #82390c;
+	}
+	#content .order-container{
+		padding: 0 16px 16px 16px;
+	}
+	#content .choose-address-title{
+		padding: 16px;
+		margin-top: 0;
+	}
+	#content .user-address{
+		padding: 16px 16px 16px 32px;
+	}
+	#content .payment-item{
+		padding: 16px 16px 16px 32px;
+	}
+	#content .payment-title{
+		padding: 16px;
+	}
+}

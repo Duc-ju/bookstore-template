@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đức Ju</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/project/addbookform/style.css">
+	<link rel="stylesheet" href="assets/css/respondsive.css">
+	<link rel="stylesheet" href="assets/project/addbookform/respondsive.css">
+	<link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Roboto+Slab:wght@700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+		<header id="header">
+
+
+
+
+
+			<div class="brand-name pointer">
+				<i class="ti-user"> </i>
+				DucJu
+			</div>
+
+
+
+			<div class="nav">
+				<ul class="control">
+					<li class="control-item "><a
+							href="https://duc-ju.github.io/bookstore-template/">Home</a>
+					</li>
+
+					<li class="control-item actived"><a
+							href="https://duc-ju.github.io/bookstore-template/ManageBook.html">Book
+							Management</a></li>
+
+
+
+					<li class="control-item"><a href="#">Logout</a></li>
+
+				</ul>
+			</div>
+			<form method="get" action="#" class="search">
+				<input type="text" name="book_name" placeholder="Book name" id="search-book-name">
+				<input type="submit" value="Search" id="submit-button">
+			</form>
+
+			<div onclick="window.open('https:'+'/'+'/duc-ju.github.io/bookstore-template/Cart.html','_self')"
+				class="cart">
+				<div class="quantity">9</div>
+				<i class="ti-shopping-cart cart-icon"></i>
+			</div>
+
+		</header>
+		<div id="book-form">
+			<div class="form-container">
+				<div class="book-form">
+					<h2 class="form-title">
+
+
+						Add New Book
+
+					</h2>
+
+
+					<form action="/LAB1/add-book" method="post">
+
+						<div class="input-container">
+							<div class="form-label">
+								<div class="label">Title</div>
+								<div class="label">Image</div>
+								<div class="label">Description</div>
+								<div class="label">Author</div>
+								<div class="label">Price</div>
+								<div class="label">Quantity</div>
+							</div>
+							<div class="form-input">
+								<input type="text" name="title" value="" required
+									placeholder="Title"> <input type="text"
+									name="image" value="" required
+									placeholder="Image"> <input type="text"
+									name="description" value="" required
+									placeholder="Description"> <input type="text"
+									name="author" value="" required
+									placeholder="Author"> <input type="text"
+									name="price" value="" required
+									placeholder="Price"> <input type="text"
+									name="quantity" value="" required
+									placeholder="Quantity">
+							</div>
+						</div>
+						<div class="category-list">
+							<h3 class="choose-category">Choose category</h3>
+							<select name="category" id="category">
+
+								<option value="1">Novel</option>
+
+								<option value="2">Comic</option>
+
+								<option value="3">Magazine</option>
+
+								<option value="4">Autobiography</option>
+
+								<option value="5">Cookery book</option>
+
+								<option value="6">Nonfiction</option>
+
+							</select>
+						</div>
+						<div class="button-container">
+							<input type="submit" value="Submit" class="book-submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="about">
+				<p class="author-name">Author : Nguyen Trang Duc</p>
+				<p class="author-identity">Student-identity : B18DCCN177</p>
+				<p class="author-last-update">Lastest update : 9/6/2021 at 12:55PM</p>
+				<p class="author-contact">Contact me <a href="https://www.facebook.com/trangducc/"
+						class="contact-icon"><i class="ti-facebook"></i></a></p>
+			</div>
+		</div>
+	</div>
+	<div id="modal" class="modal display">
+		<div class="modal-container">
+			<div class="modal-notice">
+				<h2 class="notice-title">You have added book successfully</h2>
+				<div class="modal-confirm">
+					<a class="modal-cancel" onclick="cancelAllModal()"
+						style="cursor: pointer">OK</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

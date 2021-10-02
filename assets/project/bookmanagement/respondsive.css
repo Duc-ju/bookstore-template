@@ -1,0 +1,44 @@
+@media (min-width: 1024px) {
+	
+}
+
+/* Mobile and Tablet*/
+@media (max-width: 1023px) {
+	#content .container{
+		flex-direction: column;
+		padding: 0;
+	}
+	#content .left-nav{
+		width: 100%;
+	}
+	#content .product{
+		width: 100%;
+	}
+	.book-item{
+		flex-direction: column;
+	}
+	.book-item .book-image{
+		width: 100%;
+	}
+	.book-item .book-content{
+		width: 100%;
+	}
+	#content .delete-all a, #content .add-book a{
+		text-align: center;
+	}
+	#content .row-title{
+		display: none;
+	}
+	.book-item .book-content{
+		padding: 16px;
+	}
+	.book-item .book-image{
+		padding: 16px;
+	}
+	
+
+}
+
+
+
+
